@@ -34,7 +34,7 @@
             height: 380px
             max-width: 100%
         >div:first-child
-            @include home-content-title            
+            @include home-content-title
         @include arrows
         >div.slider
             // height: 456.667px
@@ -63,7 +63,7 @@
     >.secondary-card-container
         width: calc(600px + 1rem)
         >div:first-child //image container
-            @include home-content-title                     
+            @include home-content-title
         >div.slider
             @include grid($gap: .75em)
             grid-template-areas: "a b" "c b"
@@ -82,7 +82,7 @@
                     min-height: 67%
                     overflow: hidden
                     position: relative
-                >h5 
+                >h5
                     flex: 0
                     font-size: .8em
                     text-align: right
@@ -92,7 +92,7 @@
                         font-size: 1em
                 >div
                     flex: 0
-                    padding: 0 .5em .75em 0        
+                    padding: 0 .5em .75em 0
                     div
                         @include card-price
             >div:nth-child(1)
@@ -218,7 +218,7 @@
                 grid-column: span 2
                 @include bs.from(l)
                     grid-column: span 1
-    
+
     >.special-card-container
         >div:nth-child(1)
             @include home-content-title
@@ -236,12 +236,12 @@
                     flex: 2
                     height: auto
                     width: 12em
-                    @include card-img     
+                    @include card-img
                 >div.price
                     flex: 1
                     padding: 0.5em
                     align-self: flex-end
-                    @include flex($justify: flex-end)  
+                    @include flex($justify: flex-end)
                     >p
                         @include card-price
                         padding: .1em .35em
@@ -259,7 +259,6 @@
 
 //? subsidiary
 div.subsidiary-section
-    background-color: $bgc-subsidiary
     margin-top: 2em
     div.subsidiary-container
         @include flex($direction: column, $gap: .5em)

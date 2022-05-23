@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 html::-webkit-scrollbar {
   display: none;
 }
@@ -1718,7 +1720,7 @@ header nav > div.sublinks > div.user-container > div.user-sublinks > ul > li > a
 }
 
 div.subsidiary-section {
-  background-color: #8b0023;
+
   margin-top: 2em;
 }
 div.subsidiary-section div.subsidiary-container {

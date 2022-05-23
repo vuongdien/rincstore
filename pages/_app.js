@@ -3,9 +3,12 @@
 import '@styles/index.css'
 import {Toaster} from 'react-hot-toast'
 
+
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
+
+import { useEffect } from "react";
 import { AppProvider, UserContext } from '@lib/globalContext'
 import Overlay from '@components/Overlay'
 import { useUserData } from '@lib/hooks'
@@ -19,6 +22,7 @@ import AdminFilter from '@components/Admin/AdminFilter'
 import AdminOverlay from '@components/Admin/AdminOverlay'
 
 function MyApp({ Component, pageProps }) {
+
   const {user, role, username, shoppingCart} = useUserData()
 
   if(Component.getLayout){
